@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 
 const netlify = "https://rumbonica.netlify.app";
 const local = "http://localhost:5173";
-export const webUrl = netlify;
+export const webUrl = local;
 
 const app = express();
 app.use(cors({ origin: webUrl, credentials: true }));
@@ -40,5 +40,6 @@ app.use("/comercios", comercios);
 app.use("/guiaslocales", guiaslocales);
 
 app.listen(PORT, () => {
-  console.log("Servidor corriendo");
+  console.log("Servidor corriendo ___");
 });
+

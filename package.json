@@ -14,7 +14,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@sendgrid/mail": "^8.1.6",
+    "@getbrevo/brevo": "^4.0.1",
     "@supabase/supabase-js": "^2.57.4",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
@@ -22,9 +22,8 @@
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "google-auth-library": "^10.3.0",
-    "jsonwebtoken": "^9.0.2",
-    "nodemailer": "^7.0.6"
-  },
+    "jsonwebtoken": "^9.0.2" 
+   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
     "@types/cookie-parser": "^1.4.9",

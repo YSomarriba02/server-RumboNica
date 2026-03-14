@@ -139,7 +139,7 @@ export const registrarUsuario = async (
               .json({ mensaje: "Error al actualizar token de verificacion" });
           }
         }
-        await enviarCorreo(email, token);
+        await enviarCorreo({ toEmail: email, token });
         console.log("Se reenvio el link");
         return res.status(200).json({
           mensaje: "Usuario creado. Revisa tu correo para verificar tu cuenta.",
@@ -169,7 +169,7 @@ export const registrarUsuario = async (
       return res.status(500).json({ mensaje: "Error al insertar usuario" });
 
     console.log("se envio email");
-    await enviarCorreo(email, token);
+    await enviarCorreo({ toEmail: email, token });
     return res.status(200).json({
       mensaje: "Revisa tu correo para verificar tu cuenta.",
     });
@@ -402,6 +402,8 @@ export const authGoogleCallback = async (req: Request, res: Response) => {
 
     return res.status(400).json({ mensaje: "Acción no válida" });
   } catch (err) {
+    console.error(err)
+    console.log(err);
     return res
       .status(400)
       .json({ mensaje: "Token inválido o error en autenticación" });
