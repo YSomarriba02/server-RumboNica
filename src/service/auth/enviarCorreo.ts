@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 const local = "http://localhost:3000"
-const online = "https://server-hackathon-991o.onrender.com";
-const urlServer = local
+const online = "https://rumbo-nica-qmzz.vercel.app/";
+const urlServer = online
 
 dotenv.config();
 /* eslint-disable @typescript-eslint/no-explicit-any */

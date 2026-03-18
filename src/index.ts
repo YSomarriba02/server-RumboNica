@@ -14,9 +14,9 @@ import cookieParser from "cookie-parser";
 
 const PORT = process.env.PORT;
 
-const netlify = "https://rumbonica.netlify.app";
+const vercel = "https://rumbo-nica-qmzz.vercel.app/";
 const local = "http://localhost:5173";
-export const webUrl = local;
+export const webUrl = vercel;
 
 const app = express();
 app.use(cors({ origin: webUrl, credentials: true }));
