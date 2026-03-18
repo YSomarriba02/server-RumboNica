@@ -1,11 +1,8 @@
 import { clienteGoogle, clienteGoogleId } from "../data-source.js";
 import { supabase } from "../data-source.js";
-
 import { webUrl } from "../index.js";
 import { generarToken } from "../utils/auth/crearToken.js";
-
-import { enviarCorreo } from "../service/auth/enviarCorreoSendGrid.js";
-
+import { enviarCorreo } from "../service/auth/enviarCorreo.js";
 import type { Request, Response } from "express";
 import type reqRegistrar from "../interfaces/iReqRegistrar.js";
 import validarEmail from "../utils/auth/validarEmail.js";

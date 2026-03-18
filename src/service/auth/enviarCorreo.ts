@@ -1,11 +1,9 @@
 import dotenv from "dotenv";
-const urlServer = "https://server-hackathon-991o.onrender.com";
+const local = "http://localhost:3000"
+const online = "https://server-hackathon-991o.onrender.com";
+const urlServer = local
 
 dotenv.config();
-
-
-
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { BrevoClient, Brevo } from '@getbrevo/brevo';

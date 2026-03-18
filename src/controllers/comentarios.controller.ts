@@ -17,7 +17,7 @@ export async function Comentar(req: AuthRequest, res: Response) {
     const { data, error } = await supabase
       .from("comentarios")
       .insert([{ id_lugar, id_usuario, contenido, puntuacion }])
-      .select(`*, usuarios(*)`)
+      .select(`id_comentario, contenido, puntuacion, fecha_creacion, usuarios(email, nombre, imagenurl, id_usuario)`)
       .single();
 
     console.log(data);
