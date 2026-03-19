@@ -14,7 +14,7 @@ import cookieParser from "cookie-parser";
 
 const PORT = process.env.PORT;
 
-const vercel = "https://rumbo-nica-qmzz.vercel.app/";
+const vercel = "https://rumbo-nica-qmzz.vercel.app";
 const local = "http://localhost:5173";
 export const webUrl = vercel;
 
